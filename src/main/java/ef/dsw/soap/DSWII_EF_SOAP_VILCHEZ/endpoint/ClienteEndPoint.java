@@ -21,14 +21,14 @@ public GetClienteResponse getClientes(@RequestPayload
     return clienteSevice.listarClientes();
 
 }
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getDomicilioRequest")
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getClienteRequest")
     @ResponsePayload
     public GetClienteResponse getClienteXid(
             @RequestPayload GetClienteRequest request){
         return clienteSevice.obtenerClientexId(request.getId());
     }
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "postDomicilioRequest")
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "postClienteRequest")
     @ResponsePayload
     public PostClienteResponse saveCliente(@RequestPayload
                                                PostClienteRequest request){

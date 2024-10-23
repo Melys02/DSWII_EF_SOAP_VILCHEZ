@@ -12,13 +12,13 @@ public class ClienteWebServiceConfig {
     public DefaultWsdl11Definition clienteWsdl11Definition(XsdSchema clienteEsquema){
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("ClientesPort");
-        wsdl11Definition.setLocationUri("/ws/domicilios");
+        wsdl11Definition.setLocationUri("/ws/clientes");
         wsdl11Definition.setTargetNamespace("http://www.ef.dsw.soap/ws/objects");
         wsdl11Definition.setSchema(clienteEsquema);
         return wsdl11Definition;
     }
     @Bean
-    public XsdSchema domicilioEsquema(){
+    public XsdSchema clienteEsquema(){
         return new SimpleXsdSchema(new ClassPathResource("xsd/cliente.xsd"));
     }
 }
