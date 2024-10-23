@@ -12,7 +12,7 @@ public class Contacto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idContacto;
+    private Integer idContacto;
     private String descContacto;
     private int nroContacto;
     private String refContacto;

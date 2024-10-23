@@ -12,7 +12,7 @@ import java.util.List;
 public class Tecnico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idTecnico;
+    private Integer idTecnico;
 
     private String nombre;
 

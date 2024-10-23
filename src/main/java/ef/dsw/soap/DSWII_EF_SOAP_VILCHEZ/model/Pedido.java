@@ -11,7 +11,7 @@ import lombok.Setter;
 public class Pedido {
     @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-private int id;
+private Integer idpedido;
 
     @ManyToOne
     @JoinColumn(name = "id_cliente", nullable = false)
