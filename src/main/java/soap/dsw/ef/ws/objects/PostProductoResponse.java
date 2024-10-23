@@ -64,7 +64,7 @@ public class PostProductoResponse {
      *     {@link Productows }
      *     
      */
-    public void setProducto(Productows value) {
+    public static void setProducto(Productows value) {
         this.producto = value;
     }
 

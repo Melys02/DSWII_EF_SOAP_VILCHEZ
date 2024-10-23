@@ -8,6 +8,7 @@
 
 package soap.dsw.ef.ws.objects;
 
+import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.model.Producto;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
@@ -46,13 +47,11 @@ public class PostProductoRequest {
 
     /**
      * Obtiene el valor de la propiedad producto.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Productows }
-     *     
+     *
+     * @return possible object is
+     * {@link Productows }
      */
-    public Productows getProducto() {
+    public Producto getProducto() {
         return producto;
     }
 

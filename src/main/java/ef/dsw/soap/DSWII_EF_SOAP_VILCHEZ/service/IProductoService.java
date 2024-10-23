@@ -1,16 +1,11 @@
 package ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.service;
 
-import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.model.Cliente;
-import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.model.Contacto;
-import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.model.Producto;
-import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.repository.ProductoRepository;
-
-import java.util.List;
+import soap.dsw.ef.ws.objects.*;
 
 public interface IProductoService {
-    List<Producto> listarProducto();
-    Producto obtenerProductoxId(Integer id);
-    List<Producto> buscarProducto(String nombre);
-    Producto registrarProducto(Producto producto);
-    Producto actualizarProducto(Integer id, Producto producto);
+    GetProductoRequest listarProducto();
+    GetProductoResponse obtenerProductoxId(Integer id);
+    BuscarProductoResponse buscarProducto(String nombre);
+    PostProductoResponse registrarProducto(PostProductoRequest request);
+    PutProductoResponse actualizarProducto(PutProductoRequest request);
 }

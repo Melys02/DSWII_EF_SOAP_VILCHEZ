@@ -1,13 +1,10 @@
 package ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.service;
 
-import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.model.Cliente;
-import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.model.Contacto;
-
-import java.util.List;
+import soap.dsw.ef.ws.objects.*;
 
 public interface IContactoService {
-    List<Contacto> listarContacto();
-    Contacto obtenerContactoxId(Integer id);
-    Contacto registrarContacto(Contacto contacto);
-    Contacto actualizarContacto(Integer id, Contacto contacto);
+    GetContactoRequest listarContacto();
+    GetContactoResponse obtenerContactoxId(Integer id);
+    PostContactoRequest registrarContacto(PostContactoRequest request);
+    PutContactoResponse actualizarContacto(PutContactoRequest request);
 }

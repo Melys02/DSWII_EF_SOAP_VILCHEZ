@@ -128,7 +128,7 @@ public class Contactows {
      * Define el valor de la propiedad nroContacto.
      * 
      */
-    public void setNroContacto(int value) {
+    public void setNroContacto(int nroContacto) {
         this.nroContacto = value;
     }
 
