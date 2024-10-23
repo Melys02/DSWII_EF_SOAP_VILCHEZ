@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.10.23 a las 06:47:30 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.ef.dsw.soap/ws/objects">
+    <schemaBindings map="false">
+      <package name="soap.dsw.ef.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:getContactosRequest">
+      <class ref="soap.dsw.ef.ws.objects.GetContactosRequest"/>
+    </bindings>
+    <bindings scd="tns:getContactosResponse">
+      <class ref="soap.dsw.ef.ws.objects.GetContactosResponse"/>
+    </bindings>
+    <bindings scd="~tns:contactows">
+      <class ref="soap.dsw.ef.ws.objects.Contactows"/>
+    </bindings>
+    <bindings scd="tns:getContactoRequest">
+      <class ref="soap.dsw.ef.ws.objects.GetContactoRequest"/>
+    </bindings>
+    <bindings scd="tns:getContactoResponse">
+      <class ref="soap.dsw.ef.ws.objects.GetContactoResponse"/>
+    </bindings>
+    <bindings scd="tns:postContactoRequest">
+      <class ref="soap.dsw.ef.ws.objects.PostContactoRequest"/>
+    </bindings>
+    <bindings scd="tns:postContactoResponse">
+      <class ref="soap.dsw.ef.ws.objects.PostContactoResponse"/>
+    </bindings>
+    <bindings scd="tns:putContactoRequest">
+      <class ref="soap.dsw.ef.ws.objects.PutContactoRequest"/>
+    </bindings>
+    <bindings scd="tns:putContactoResponse">
+      <class ref="soap.dsw.ef.ws.objects.PutContactoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

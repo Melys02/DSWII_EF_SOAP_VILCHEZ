@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.10.23 a las 06:44:17 AM PET 
+// Generado el: 2024.10.23 a las 06:50:45 AM PET 
 //
 
 
@@ -25,7 +25,8 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="cliente" type="{http://www.ef.dsw.soap/ws/objects}clientews"/&gt;
+ *         &lt;element name="idproducto" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="producto" type="{http://www.ef.dsw.soap/ws/objects}productows"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +37,54 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "cliente"
+    "idproducto",
+    "producto"
 })
-@XmlRootElement(name = "postClienteResponse")
-public class PostClienteResponse {
+@XmlRootElement(name = "putProductoRequest")
+public class PutProductoRequest {
 
+    protected int idproducto;
     @XmlElement(required = true)
-    protected Clientews cliente;
+    protected Productows producto;
 
     /**
-     * Obtiene el valor de la propiedad cliente.
+     * Obtiene el valor de la propiedad idproducto.
      * 
-     * @return
-     *     possible object is
-     *     {@link Clientews }
-     *     
      */
-    public Clientews getCliente() {
-        return cliente;
+    public int getIdproducto() {
+        return idproducto;
     }
 
     /**
-     * Define el valor de la propiedad cliente.
+     * Define el valor de la propiedad idproducto.
+     * 
+     */
+    public void setIdproducto(int value) {
+        this.idproducto = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad producto.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Productows }
+     *     
+     */
+    public Productows getProducto() {
+        return producto;
+    }
+
+    /**
+     * Define el valor de la propiedad producto.
      * 
      * @param value
      *     allowed object is
-     *     {@link Clientews }
+     *     {@link Productows }
      *     
      */
-    public void setCliente(Clientews value) {
-        this.cliente = value;
+    public void setProducto(Productows value) {
+        this.producto = value;
     }
 
 }

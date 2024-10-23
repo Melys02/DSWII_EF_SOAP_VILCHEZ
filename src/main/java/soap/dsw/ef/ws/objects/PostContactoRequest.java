@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.10.23 a las 06:44:17 AM PET 
+// Generado el: 2024.10.23 a las 06:47:30 AM PET 
 //
 
 
@@ -25,7 +25,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="cliente" type="{http://www.ef.dsw.soap/ws/objects}clientews"/&gt;
+ *         &lt;element name="contacto" type="{http://www.ef.dsw.soap/ws/objects}contactows"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +36,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "cliente"
+    "contacto"
 })
-@XmlRootElement(name = "postClienteResponse")
-public class PostClienteResponse {
+@XmlRootElement(name = "postContactoRequest")
+public class PostContactoRequest {
 
     @XmlElement(required = true)
-    protected Clientews cliente;
+    protected Contactows contacto;
 
     /**
-     * Obtiene el valor de la propiedad cliente.
+     * Obtiene el valor de la propiedad contacto.
      * 
      * @return
      *     possible object is
-     *     {@link Clientews }
+     *     {@link Contactows }
      *     
      */
-    public Clientews getCliente() {
-        return cliente;
+    public Contactows getContacto() {
+        return contacto;
     }
 
     /**
-     * Define el valor de la propiedad cliente.
+     * Define el valor de la propiedad contacto.
      * 
      * @param value
      *     allowed object is
-     *     {@link Clientews }
+     *     {@link Contactows }
      *     
      */
-    public void setCliente(Clientews value) {
-        this.cliente = value;
+    public void setContacto(Contactows value) {
+        this.contacto = value;
     }
 
 }

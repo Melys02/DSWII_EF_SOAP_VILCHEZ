@@ -2,12 +2,14 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.10.23 a las 06:44:17 AM PET 
+// Generado el: 2024.10.23 a las 06:47:30 AM PET 
 //
 
 
 package soap.dsw.ef.ws.objects;
 
+import java.util.ArrayList;
+import java.util.List;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
@@ -25,8 +27,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="idcliente" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="cliente" type="{http://www.ef.dsw.soap/ws/objects}clientews"/&gt;
+ *         &lt;element name="contacto" type="{http://www.ef.dsw.soap/ws/objects}contactows" maxOccurs="unbounded"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -37,54 +38,41 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "idcliente",
-    "cliente"
+    "contacto"
 })
-@XmlRootElement(name = "putClienteRequest")
-public class PutClienteRequest {
+@XmlRootElement(name = "getContactosResponse")
+public class GetContactosResponse {
 
-    protected int idcliente;
     @XmlElement(required = true)
-    protected Clientews cliente;
+    protected List<Contactows> contacto;
 
     /**
-     * Obtiene el valor de la propiedad idcliente.
+     * Gets the value of the contacto property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the Jakarta XML Binding object.
+     * This is why there is not a <CODE>set</CODE> method for the contacto property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getContacto().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Contactows }
+     * 
      * 
      */
-    public int getIdcliente() {
-        return idcliente;
-    }
-
-    /**
-     * Define el valor de la propiedad idcliente.
-     * 
-     */
-    public void setIdcliente(int value) {
-        this.idcliente = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad cliente.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Clientews }
-     *     
-     */
-    public Clientews getCliente() {
-        return cliente;
-    }
-
-    /**
-     * Define el valor de la propiedad cliente.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Clientews }
-     *     
-     */
-    public void setCliente(Clientews value) {
-        this.cliente = value;
+    public List<Contactows> getContacto() {
+        if (contacto == null) {
+            contacto = new ArrayList<Contactows>();
+        }
+        return this.contacto;
     }
 
 }

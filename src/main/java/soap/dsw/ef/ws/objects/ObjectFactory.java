@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.10.23 a las 04:08:41 AM PET 
+// Generado el: 2024.10.23 a las 06:50:45 AM PET 
 //
 
 
@@ -37,75 +37,91 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetClientesRequest }
+     * Create an instance of {@link GetProductosRequest }
      * 
      */
-    public GetClientesRequest createGetClientesRequest() {
-        return new GetClientesRequest();
+    public GetProductosRequest createGetProductosRequest() {
+        return new GetProductosRequest();
     }
 
     /**
-     * Create an instance of {@link GetClientesResponse }
+     * Create an instance of {@link GetProductosResponse }
      * 
      */
-    public GetClientesResponse createGetClientesResponse() {
-        return new GetClientesResponse();
+    public GetProductosResponse createGetProductosResponse() {
+        return new GetProductosResponse();
     }
 
     /**
-     * Create an instance of {@link Clientews }
+     * Create an instance of {@link Productows }
      * 
      */
-    public Clientews createClientews() {
-        return new Clientews();
+    public Productows createProductows() {
+        return new Productows();
     }
 
     /**
-     * Create an instance of {@link GetClienteRequest }
+     * Create an instance of {@link GetProductoRequest }
      * 
      */
-    public GetClienteRequest createGetClienteRequest() {
-        return new GetClienteRequest();
+    public GetProductoRequest createGetProductoRequest() {
+        return new GetProductoRequest();
     }
 
     /**
-     * Create an instance of {@link GetClienteResponse }
+     * Create an instance of {@link GetProductoResponse }
      * 
      */
-    public GetClienteResponse createGetClienteResponse() {
-        return new GetClienteResponse();
+    public GetProductoResponse createGetProductoResponse() {
+        return new GetProductoResponse();
     }
 
     /**
-     * Create an instance of {@link PostClienteRequest }
+     * Create an instance of {@link PostProductoRequest }
      * 
      */
-    public PostClienteRequest createPostClienteRequest() {
-        return new PostClienteRequest();
+    public PostProductoRequest createPostProductoRequest() {
+        return new PostProductoRequest();
     }
 
     /**
-     * Create an instance of {@link PostClienteResponse }
+     * Create an instance of {@link PostProductoResponse }
      * 
      */
-    public PostClienteResponse createPostClienteResponse() {
-        return new PostClienteResponse();
+    public PostProductoResponse createPostProductoResponse() {
+        return new PostProductoResponse();
     }
 
     /**
-     * Create an instance of {@link PutClienteRequest }
+     * Create an instance of {@link BuscarProductoRequest }
      * 
      */
-    public PutClienteRequest createPutClienteRequest() {
-        return new PutClienteRequest();
+    public BuscarProductoRequest createBuscarProductoRequest() {
+        return new BuscarProductoRequest();
     }
 
     /**
-     * Create an instance of {@link PutClienteResponse }
+     * Create an instance of {@link BuscarProductoResponse }
      * 
      */
-    public PutClienteResponse createPutClienteResponse() {
-        return new PutClienteResponse();
+    public BuscarProductoResponse createBuscarProductoResponse() {
+        return new BuscarProductoResponse();
+    }
+
+    /**
+     * Create an instance of {@link PutProductoRequest }
+     * 
+     */
+    public PutProductoRequest createPutProductoRequest() {
+        return new PutProductoRequest();
+    }
+
+    /**
+     * Create an instance of {@link PutProductoResponse }
+     * 
+     */
+    public PutProductoResponse createPutProductoResponse() {
+        return new PutProductoResponse();
     }
 
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.10.23 a las 06:44:17 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.ef.dsw.soap/ws/objects">
+    <schemaBindings map="false">
+      <package name="soap.dsw.ef.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:getClientesRequest">
+      <class ref="soap.dsw.ef.ws.objects.GetClientesRequest"/>
+    </bindings>
+    <bindings scd="tns:getClientesResponse">
+      <class ref="soap.dsw.ef.ws.objects.GetClientesResponse"/>
+    </bindings>
+    <bindings scd="~tns:clientews">
+      <class ref="soap.dsw.ef.ws.objects.Clientews"/>
+    </bindings>
+    <bindings scd="tns:getClienteRequest">
+      <class ref="soap.dsw.ef.ws.objects.GetClienteRequest"/>
+    </bindings>
+    <bindings scd="tns:getClienteResponse">
+      <class ref="soap.dsw.ef.ws.objects.GetClienteResponse"/>
+    </bindings>
+    <bindings scd="tns:postClienteRequest">
+      <class ref="soap.dsw.ef.ws.objects.PostClienteRequest"/>
+    </bindings>
+    <bindings scd="tns:postClienteResponse">
+      <class ref="soap.dsw.ef.ws.objects.PostClienteResponse"/>
+    </bindings>
+    <bindings scd="tns:putClienteRequest">
+      <class ref="soap.dsw.ef.ws.objects.PutClienteRequest"/>
+    </bindings>
+    <bindings scd="tns:putClienteResponse">
+      <class ref="soap.dsw.ef.ws.objects.PutClienteResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

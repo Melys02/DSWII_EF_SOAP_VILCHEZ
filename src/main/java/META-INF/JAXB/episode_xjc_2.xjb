@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.10.23 a las 06:50:45 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.ef.dsw.soap/ws/objects">
+    <schemaBindings map="false">
+      <package name="soap.dsw.ef.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:getProductosRequest">
+      <class ref="soap.dsw.ef.ws.objects.GetProductosRequest"/>
+    </bindings>
+    <bindings scd="tns:getProductosResponse">
+      <class ref="soap.dsw.ef.ws.objects.GetProductosResponse"/>
+    </bindings>
+    <bindings scd="~tns:productows">
+      <class ref="soap.dsw.ef.ws.objects.Productows"/>
+    </bindings>
+    <bindings scd="tns:getProductoRequest">
+      <class ref="soap.dsw.ef.ws.objects.GetProductoRequest"/>
+    </bindings>
+    <bindings scd="tns:getProductoResponse">
+      <class ref="soap.dsw.ef.ws.objects.GetProductoResponse"/>
+    </bindings>
+    <bindings scd="tns:postProductoRequest">
+      <class ref="soap.dsw.ef.ws.objects.PostProductoRequest"/>
+    </bindings>
+    <bindings scd="tns:postProductoResponse">
+      <class ref="soap.dsw.ef.ws.objects.PostProductoResponse"/>
+    </bindings>
+    <bindings scd="tns:buscarProductoRequest">
+      <class ref="soap.dsw.ef.ws.objects.BuscarProductoRequest"/>
+    </bindings>
+    <bindings scd="tns:buscarProductoResponse">
+      <class ref="soap.dsw.ef.ws.objects.BuscarProductoResponse"/>
+    </bindings>
+    <bindings scd="tns:putProductoRequest">
+      <class ref="soap.dsw.ef.ws.objects.PutProductoRequest"/>
+    </bindings>
+    <bindings scd="tns:putProductoResponse">
+      <class ref="soap.dsw.ef.ws.objects.PutProductoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
