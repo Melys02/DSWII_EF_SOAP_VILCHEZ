@@ -3,9 +3,11 @@ package ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.service.impl;
 import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.model.Cliente;
 import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.repository.ClienteRepository;
 import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.service.IClienteSevice;
+import ef.dsw.soap.DSWII_EF_SOAP_VILCHEZ.util.convert.ClienteConvert;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import soap.dsw.ef.ws.objects.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,37 +17,35 @@ import java.util.Optional;
 public class ClienteService implements IClienteSevice {
 
     private final ClienteRepository clienteRepository;
-
+private  final ClienteConvert clienteConvert;
 
     @Override
-    public List<Cliente> listarClientes() {
-        return clienteRepository.findAll();
+    public GetClienteResponse listarClientes() {
+        GetClienteResponse getClienteResponse = new GetClienteResponse();
+        getClienteResponse.getCliente().equals(
+                clienteConvert.mapToClientewsList(clienteRepository.findAll())
+        );
+        return null;
     }
 
     @Override
-    public Cliente obtenerClientexId(Integer id) {
-        return clienteRepository.findById(id).orElse(null);
+    public GetClienteResponse obtenerClientexId(Integer id) {
+       GetClienteResponse clienteResponse = new GetClienteResponse();
+       clienteResponse.setCliente(
+               clienteConvert.mapToClientews(
+                       clienteRepository.findById(id).orElse(null))
+               );
+
+        return clienteResponse;
     }
 
     @Override
-    public Cliente registrarCliente(Cliente cliente) {
-        return clienteRepository.save(cliente);
+    public PostClienteResponse registrarCliente(PostClienteRequest request) {
+        return null;
     }
 
     @Override
-    public Cliente actualizarCliente(Integer id, Cliente cliente) {
-        Optional<Cliente> clienteOpt = clienteRepository.findById(id);
-
-        if (clienteOpt.isPresent()) {
-            Cliente clienteExistente = clienteOpt.get();
-            clienteExistente.setNombre(cliente.getNombre());
-            clienteExistente.setCorreo(cliente.getCorreo());
-            clienteExistente.setTelefono(cliente.getTelefono());
-            clienteExistente.setDireccion(cliente.getDireccion());
-
-            return clienteRepository.save(clienteExistente);
-        } else {
-            throw new EntityNotFoundException("Cliente con id " + id + " no encontrado");
-        }
+    public PutClienteResponse actualizarCliente(PutClienteRequest request) {
+        return null;
     }
 }

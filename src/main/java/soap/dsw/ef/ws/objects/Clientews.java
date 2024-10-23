@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.10.23 a las 03:52:20 AM PET 
+// Generado el: 2024.10.23 a las 04:08:41 AM PET 
 //
 
 
@@ -26,6 +26,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="idcliente" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="nombre" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="correo" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="apellido" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="telefono" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *         &lt;element name="direccion" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
@@ -43,6 +44,7 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlType(name = "clientews", propOrder = {
     "idcliente",
     "nombre",
+    "correo",
     "apellido",
     "telefono",
     "direccion",
@@ -54,6 +56,8 @@ public class Clientews {
     protected int idcliente;
     @XmlElement(required = true)
     protected String nombre;
+    @XmlElement(required = true)
+    protected String correo;
     @XmlElement(required = true)
     protected String apellido;
     @XmlElement(required = true)
@@ -103,6 +107,30 @@ public class Clientews {
      */
     public void setNombre(String value) {
         this.nombre = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad correo.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCorreo() {
+        return correo;
+    }
+
+    /**
+     * Define el valor de la propiedad correo.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCorreo(String value) {
+        this.correo = value;
     }
 
     /**
