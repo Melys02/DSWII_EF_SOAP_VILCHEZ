@@ -11,14 +11,15 @@ import java.util.List;
 public class ClienteConvert {
     public Cliente maptoCliente(Clientews clientews) {
 
-        return Cliente.builder()
-                .idcliente(clientews.getIdcliente())
-                .nombre(clientews.getNombre())
-                .apellido(clientews.getApellido())
-                .correo(clientews.getCorreo())
-            .direccion(clientews.getDireccion())
-                .tipoCliente(clientews.getTipoCliente())
-                .fechaRegistro(clientews.getFechaRegistro()).build();
+        Cliente cliente = new Cliente();
+        cliente.setIdcliente(clientews.getIdcliente());
+        cliente.setNombre(clientews.getNombre());
+        cliente.setApellido(clientews.getApellido());
+        cliente.setCorreo(clientews.getCorreo());
+        cliente.setDireccion(clientews.getDireccion());
+        cliente.setTipoCliente(clientews.getTipoCliente());
+        cliente.setFechaRegistro(clientews.getFechaRegistro());
+        return cliente;
     }
 public Clientews mapToClientews(Cliente cliente){
         Clientews clientews = new Clientews();
